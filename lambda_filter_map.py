@@ -5,7 +5,8 @@ print(list(filter(lambda x: x>=0, l1)))
 print(list(map(lambda x: x/3, l1)))
 x=0
 l2 = [(1,),(1,2,3),(2,3),(1,2,3,4,5),(1,)]
-
+print(sorted(l2,key=lambda x:len(x)))
+print(l2)
 # def getItemtoSort(item):
 #     if isinstance(item, int):
 #         return 1
