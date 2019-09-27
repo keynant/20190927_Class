@@ -1,6 +1,5 @@
 from tkinter import *
-from datetime import *
-
+import time
 class CalculatorWindow:
     def __init__(self, root):
         self.root= root
@@ -28,15 +27,11 @@ class CalculatorWindow:
                                  font=("david", 72))
         self.total_label2.pack()
         self.addBtn4 = Button(text="Show Date",
-                              command=lambda: self.dateLabel.set(date.today()))
+                              command=lambda: self.dateLabel.set(time.ctime()))
         self.addBtn4.pack()
+
 
 
 root = Tk()
 my_window = CalculatorWindow(root)
 root.mainloop()
-
-# targil;
-# add button which decrease 1
-# add button which sets the value back to 0
-# with lambda?
